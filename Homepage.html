@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SHOPPING ASSISTANT</title>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Shrikhand">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" type="text/css" href="C:\Users\AarthiAkilan\Desktop\Programming\management_project\sky.css">
+<style type="text/css">
+    .cloud_ani{
+        position: relative;
+        height: 100px;
+        width: 100%;
+    }
+
+    body{
+        background-image: linear-gradient(lightblue, white);
+        height: 670px;
+    }
+
+.navbar {
+    overflow: hidden;
+    background-color: lightblue;
+    font-family: 'Shrikhand', serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.dropdown, .dropdown2, .dropdown3, .dropdown4, .dropdown5, .dropdown6{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn,.dropdown2 .dropbtn2, .dropdown3 .dropbtn3, .dropdown4 .dropbtn4, .dropdown5 .dropbtn5, .dropdown6 .dropbtn6 {
+    font-size: 20px;    
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 45px;
+    font-family: 'Shrikhand', serif;
+    background-color: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropdown2:hover .dropbtn2, .dropdown3:hover .dropbtn3, .dropdown4:hover .dropbtn4, .dropdown5:hover .dropbtn5, .dropdown6:hover .dropbtn6 {
+    background-color: #d9d9d9;
+}
+
+.dropdown-content, .dropdown-content2, .dropdown-content3, .dropdown-content4, .dropdown-content5 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 20%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a, .dropdown-content2 a, .dropdown-content3 a, .dropdown-content4 a, .dropdown-content5 a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover, .dropdown-content2 a:hover, .dropdown-content3 a:hover, .dropdown-content4 a:hover, .dropdown-content5 a:hover {
+    background-color: #e6e6e6;
+}
+
+.dropdown:hover .dropdown-content, .dropdown2:hover .dropdown-content2, .dropdown3:hover .dropdown-content3, .dropdown4:hover .dropdown-content4, .dropdown5:hover .dropdown-content5 {
+    display: block;
+}
+
+.container {
+  position: absolute;
+  left: 50px;
+  top: 100px;
+  
+}
+
+.image {
+  display: block;
+  height: 300px;
+  width:400px;
+  padding: 100px 50px;
+}
+
+.overlay {
+  position: absolute;
+  top: 100px;
+  bottom: 0;
+  left: 50px;
+  right: 0;
+  height: 300px;
+  width: 400px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: lightblue;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container1 {
+  position: absolute;
+  right: 50px;
+  top: 100px;
+  
+}
+
+.image1 {
+  display: block;
+  height: 300px;
+  width:400px;
+  padding-top: 100px;
+  padding-right: 50px;
+}
+
+.overlay1 {
+  position: absolute;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: 50px;
+  height: 300px;
+  width: 400px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: lightblue;
+}
+
+.container1:hover .overlay1 {
+  opacity: 1;
+}
+
+.text1 {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+    <div class="dropdown">
+        <button class="dropbtn">ELECTRONICS</button>
+            <div class="dropdown-content">
+              <a href="#">LAPTOPS</a>
+              <a href="#">SMART WATCHES</a>
+              <a href="#">CAMERS</a>
+            </div>
+    </div>
+    <div class="dropdown2">
+        <button class="dropbtn2">MOBILES</button>
+        <div class="dropdown-content2">
+            <a href="C:\Users\AarthiAkilan\Desktop\Programming\management_project\apple.html">APPLE</a>
+            <a href="#">SAMSUNG</a>
+            <a href="#">REDMI</a>
+        </div>
+    </div>
+    <div class="dropdown3">
+        <button class="dropbtn3">ENTERTAINMENT</button>
+        <div class="dropdown-content3">
+            <a href="#">MP3 PLAYERS & IPODS</a>
+            <a href="#">HOME THEATER SYSTEMS</a>
+            <a href="#">GAMING CONSOLES</a>
+        </div>
+    </div>
+    <div class="dropdown4">
+        <button class="dropbtn4">HOME APPLIANCES</button>
+        <div class="dropdown-content4">
+            <a href="#">TELEVISIONS</a>
+            <a href="#">AIR CONDITIONERS</a>
+            <a href="#">REFRIGERATOR</a>
+        </div>
+    </div>
+    <div class="dropdown5">
+        <button class="dropbtn5">CLOTHING</button>
+        <div class="dropdown-content5">
+            <a href="#">MEN</a>
+            <a href="#">WOMEN</a>
+            <a href="#">KIDS</a>
+        </div>
+    </div>
+    <div class="dropdown6">
+        <button class="dropbtn6">FOOD</button>
+    </div>
+</div>
+<div class="sky">
+    <div class="cloud variant-1"></div>
+    <div class="cloud variant-2"></div>
+    <div class="cloud variant-3"></div>
+    <div class="cloud variant-4"></div>
+    <div class="cloud variant-5"></div>
+    <div class="cloud variant-6"></div>
+    <div class="cloud variant-7"></div>
+</div>
+
+<div class="container">
+  <img src="C:\Users\AarthiAkilan\Desktop\Programming\management_project\off1.gif" class="image">
+  <div class="overlay">
+    <div class="text">OFFLINE SHOPPING</div>
+  </div>
+</div>
+
+<div class="container1">
+  <img src="C:\Users\AarthiAkilan\Desktop\Programming\management_project\on2.gif" class="image1">
+  <div class="overlay1">
+    <div class="text1">ONLINE SHOPPING</div>
+  </div>
+</div>
+
+</body>
+</html>

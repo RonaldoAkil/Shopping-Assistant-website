@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" type="text/css" href="C:\Users\AarthiAkilan\Desktop\Programming\management_project\sky.css">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Shrikhand">
+<style type="text/css">
+	.cloud_ani{
+		position: relative;
+		height: 100px;
+		width: 100%;
+	}
+
+	body{
+		background-image: linear-gradient(pink, white);
+		height: 670px;
+		font-family: 'Shrikhand', serif;
+	}
+
+	.sidenav1, .sidenav2, .sidenav3, .sidenav4, .sidenav5 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: lightblue;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: center;
+    
+}
+
+
+.sidenav1 .closebtn1, .sidenav2 .closebtn2, .sidenav3 .closebtn3, .sidenav4 .closebtn4, .sidenav5 .closebtn5 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav1, .sidenav2, .sidenav3, .sidenav4, .sidenav5 {padding-top: 15px;}
+  .sidenav1 a, .sidenav2 a, .sidenav3 a, .sidenav4 a, .sidenav5 a {font-size: 18px;}
+}
+
+.text {
+	font-size: 50px;
+    text-align: center;
+}
+
+.text1 {
+	font-family: 'Shrikhand', serif;
+	font-size: 36px;
+	position: absolute;
+	top: 80px;
+	left: 30%;
+}
+.text2 {
+	font-family: 'Shrikhand', serif;
+	font-size: 25px;
+	position: absolute;
+	top: 150px;
+	left: 30%;
+}
+.text3, .text4, .text5, .text6, .text7{
+  position: absolute;
+  font-family: 'Shrikhand', serif;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 100px;
+}
+ .but{
+ 	position: absolute;
+ 	color: black;
+ 	background-color: white;
+ 	border: 2px solid pink;
+ 	text-align: center;
+ 	font-size: 25px;
+ 	cursor: pointer;
+ 	transition: 0.2s;
+ }
+
+ .but1{
+ 	background-color: white;
+ 	top: 290px;
+ 	left: 30%;
+ }
+ .but2{
+ 	background-color: white;
+ 	top: 340px;
+ 	left: 30%;
+ }
+.but3{
+ 	background-color: white;
+ 	top: 390px;
+ 	left: 30%;
+ }
+ .but4{
+ 	background-color: white;
+ 	top: 440px;
+ 	left: 30%;
+ }
+ .but5{
+ 	background-color: white;
+ 	top: 490px;
+ 	left: 30%;
+ }
+ .but1:hover,.but2:hover, .but3:hover, .but4:hover, .but5:hover{
+ 	background-color: pink;
+ 	color: white;
+ }
+
+</style>
+
+</head>
+<body>
+	<div class="sky">
+		<div class="cloud variant-1"></div>
+		<div class="cloud variant-2"></div>
+		<div class="cloud variant-3"></div>
+		<div class="cloud variant-4"></div>
+		<div class="cloud variant-5"></div>
+		<div class="cloud variant-6"></div>
+		<div class="cloud variant-7"></div>
+	</div>
+
+	<img src="C:\Users\AarthiAkilan\Desktop\Programming\management_project\iphone.jpg" style="width: 250px; height: 300px; padding: 200px 10px;">
+
+	<p class="text1">
+		<u>PRODUCT DESCRIPTION</u><br><br></p>
+	<p class="text2">
+		Product Catogery: Moblies<br>
+		Brand Name: Apple Iphones<br><br>
+		Factors to keep in mind!
+	</p>
+
+	<button class="but but1" onclick="openNav1()">Convenience</button>
+	<button class="but but2" onclick="openNav2()">Immediacy</button>
+	<button class="but but3" onclick="openNav3()">Price</button>
+	<button class="but but4" onclick="openNav4()">Return Policy</button>
+	<button class="but but5" onclick="openNav5()">Other Benifits</button>
+
+	<div id="mySidenav1" class="sidenav1">
+  <a href="javascript:void(0)" class="closebtn1" onclick="closeNav1()">&times;</a>
+  <p class="text3">Almost every e-commerce websites are selling Apple moblies online, with a wide range of, especially Iphones that are 100% genuine products.<br>
+  	<br>Apple has four main distributors in India – Ingram Micro, Redington, Beetel-Brightstar and Rashi Peripherals. So, you don't find a Apple store around every corner of your street.<br><br>
+     The Best Choice is: ONLINE SHOPPING!
+   </p>
+</div>
+<script>
+function openNav1() {
+    document.getElementById("mySidenav1").style.width = "35%";
+}
+
+function closeNav1() {
+    document.getElementById("mySidenav1").style.width = "0";
+}
+</script>
+
+	<div id="mySidenav2" class="sidenav2">
+  <a href="javascript:void(0)" class="closebtn2" onclick="closeNav2()">&times;</a>
+  <p class="text4"> When you purchase a new product, it is always nice to have that product in your possession immediately.<br>
+  	You don't have to wait for shipping, get out of your home, go to the nearest mobile store and come out with the Iphone that you wished for!<br><br><br>
+  If the immediacy for the product is not very urget and you don't mind waiting for 2 to 3 days, well then go ahead with Online shopping.<br><br>
+The Best Choice is: OFFLINE SHOPPING!</p>
+</div>
+<script>
+function openNav2() {
+    document.getElementById("mySidenav2").style.width = "35%";
+}
+
+function closeNav2() {
+    document.getElementById("mySidenav2").style.width = "0";
+}
+</script>
+
+	<div id="mySidenav3" class="sidenav3">
+  <a href="javascript:void(0)" class="closebtn3" onclick="closeNav3()">&times;</a>
+  <p class="text5">You can often find Iphones more cheaply online than you can in stores.<br>
+  	Shopping online can save you money, especially when you couple it with online savings codes, deals of the day, and free shipping offers.<br>
+  	<br>
+  	Offline retailers don't always offer Iphones at low costs. Factors such as rent, electricity and cost of running an establishment are considerably greater than an online store.<br><br>
+  The Best Choice is: ONLINE SHOPPING!</p>
+
+</div>
+
+<script>
+function openNav3() {
+    document.getElementById("mySidenav3").style.width = "35%";
+}
+
+function closeNav3() {
+    document.getElementById("mySidenav3").style.width = "0";
+}
+</script>
+
+	<div id="mySidenav4" class="sidenav4">
+  <a href="javascript:void(0)" class="closebtn4" onclick="closeNav4()">&times;</a>
+  <p class="text6"> If you received a damaged or defective Iphone, e-commerce sites are ready to ship you a replacement of the exact item, but you need to follow 
+  	various procedures and have to wait really long(about 2 weeks or so), to get it replaced.<br>
+  	And return shipping isn't free<br><br>
+  	You can go straight to your store and get your Iphone exchanged or replaced. No need to wait for a long time and also less procedures unlike online shopping.
+  	<br>They don't charge you any extra amount.<br><br>
+  The Best Choice is: OFFLINE SHOPPING!</p>
+
+</div>
+<script>
+function openNav4() {
+    document.getElementById("mySidenav4").style.width = "35%";
+}
+
+function closeNav4() {
+    document.getElementById("mySidenav4").style.width = "0";
+}
+</script>
+
+	<div id="mySidenav5" class="sidenav5">
+  <a href="javascript:void(0)" class="closebtn5" onclick="closeNav5()">&times;</a>
+  <p class="text7">Online stores provide coupon codes, these coupons help people to save lot of money on Iphones.<br>
+  	Online stores are open 24/7 <br>Invoices are saved permanently in your account after every purchase, till your account is deleted.<br><br>
+  The Best Choice is: ONLINE SHOPPING!</p>
+</div>
+<script>
+function openNav5() {
+    document.getElementById("mySidenav5").style.width = "35%";
+}
+
+function closeNav5() {
+    document.getElementById("mySidenav5").style.width = "0";
+}
+</script>
+
+</body>
+</html>
